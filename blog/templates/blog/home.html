@@ -1,0 +1,14 @@
+<head>
+    <title>진원이 페이지</title>
+</head>
+<body>
+    <h1>안녀ㅕ엉어어</h1>
+    <h2><a href="{% url 'new'%}">새 글을 쓰자!</a></h2>
+    {% for Sche in Schedules.all %}
+        <div>
+            <h2><a href="{% url 'detail' Sche.id%}">{{Sche.title}}</a></h2>
+            <p>{{Sche.created_date}}</p>
+            <p>{{Sche.text}}</p>
+        </div>
+    {%endfor%}
+</body>

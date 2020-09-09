@@ -1,0 +1,15 @@
+<head>
+    <title>진원쓰 세부사항</title>
+</head>
+
+<body>
+    <h1>안녕 나에 대해 더 자세히 알고싶니?!</h1>
+    <div>
+        <h2>{{Sche.title}}</h2>
+        <p>{{Sche.created_date}}</p>
+        <p>{{Sche.content}}</p>
+        <a href="{% url 'home' %}">홈으로 가자!</a>
+        <a href="{% url 'edit' Sche.id %}">수정하러 가자!</a>
+        <a href="{% url 'delete' Sche.id %}">지운다ㅏ!!</a>
+    </div>
+</body>
